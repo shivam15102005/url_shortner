@@ -9,10 +9,10 @@ const URL = require("./models/url");
 const { checkForAuthentication, restrictTo} = require("./middleware/auth");
 const cookieParser = require("cookie-parser")
 const app = express();
-const PORT = process.env.PORT;
+const PORT = 8000;
 
 
-connectMongoDb( process.env.MONGO_URL).then(() =>{
+connectMongoDb( "mongodb://localhost:27017/short-url").then(() =>{
     console.log("MongoDB Connected");
 });
 
