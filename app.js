@@ -12,7 +12,7 @@ const app = express();
 const PORT = 8000;
 
 
-connectMongoDb( "mongodb://localhost:27017/short-url").then(() =>{
+connectMongoDb( "mongodb://localhost:127.0.0.1:27017/short-url").then(() =>{
     console.log("MongoDB Connected");
 });
 
